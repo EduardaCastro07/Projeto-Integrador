@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css">
+    
 </head>
 <body>
 <header>
@@ -54,35 +56,40 @@
             </li>
             <li>
                 <h2>Aceleração escalar</h2>
-                <p>Num movimento variado, seja v1 a velocidade escalar do móvel no instante t1, e v2 a velocidade escalar no instante posterior t2. Seja Sv 5 v2  v1 a variação da velocidade no intervalo de tempo St. Observe que a aceleração escalar média é a grandeza que indica quanto varia a velocidade escalar num dado intervalo de tempo. . A aceleração escalar média am no intervalo de tempo St é, por definição: 
+                <p>Num movimento variado, seja V1 a velocidade escalar do móvel no instante T1, e V2 a velocidade escalar no instante posterior T2. Seja Sv 5 V2  V1 a variação da velocidade no intervalo de tempo St. Observe que a aceleração escalar média é a grandeza que indica quanto varia a velocidade escalar num dado intervalo de tempo. . A aceleração escalar média am no intervalo de tempo St é, por definição: 
                 </p>
-                <img src="aceleração.png" alt="">
-                <div id="formulae"></div>
+
+                <div id="formula"></div>
                 <script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
 
                 <script>
-                const formulae =" v = v_0 + a \\cdot t \\\\";
-                const elemente = document.getElementById('formulae');
-                katex.render(formulae, elemente);
+                const formula4 ="a_{\\text{média}} = \\frac{\\Delta v}{\\Delta t}";
+                const element4 = document.getElementById('formula');
+                katex.render(formula4, element4);
                 </script><br>
-                
-                <p>Se a variação da velocidade Sv estiver em m/s (metros por segundo) e o intervalo de tempo St estiver em s (segundos), a aceleração ___ Sv St será medida em m/s ____ s (metros por segundo por segundo), que se indica por m/s2 (metros por segundo ao quadrado). De modo geral, a unidade de aceleração é o quociente da unidade de velocidade pela unidade de tempo: km/h _____ s , cm/s _____ s , m/s ____ s , km/h _____ min , km/h _____ h etc.
+
+                <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+                <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+                    onload="renderMathInElement(document.body);"></script>
+
+                <p>Se a variação da velocidade \( \Delta v \) estiver em m/s (metros por segundo) e o intervalo de tempo \( \Delta t \) estiver em s (segundos), a aceleração \( \frac{\Delta v}{\Delta t} \) será medida em \( \frac{m}{s} \) (metros por segundo por segundo), que se indica por \( m/s^2 \) (metros por segundo ao quadrado). De modo geral, a unidade de aceleração é o quociente da unidade de velocidade pela unidade de tempo: \( \frac{km/h}{s} \),\( \frac{cm/s}{s} \) ,\( \frac{m/s}{s} \),\( \frac{km/h}{min} \) , \( \frac{km/h}{h} \) etc.
                 </p>
-                <p>A aceleração escalar pode ser positiva ou negativa, conforme Sv seja positivo ou negativo, já que St é positivo. No movimento uniforme a velocidade escalar é constante e a aceleração escalar é nula. Quando a aceleração escalar instantânea é a mesma em todos os instantes, ela coincide com a aceleração escalar média em qualquer intervalo de tempo. 
+                <p>A aceleração escalar pode ser positiva ou negativa, conforme \( \Delta v \) seja positivo ou negativo, já que \( \Delta t \) é positivo. No movimento uniforme a velocidade escalar é constante e a aceleração escalar é <strong>nula.</strong> Quando a aceleração escalar instantânea é a mesma em todos os instantes,<strong>ela coincide com a aceleração escalar média em qualquer intervalo de tempo. </strong> 
                 </p>
             </li>
             <li>
                 <h2>Função horária da velocidade</h2>
-                <p>Nos movimentos variados, além de o espaço s variar no decurso do tempo, também a velocidade escalar é uma função do tempo. A velocidade escalar pode ser apresentada como função do tempo por meio de tabelas ou de funções matemáticas. A função que relaciona a velocidade escalar v em função do tempo t é chamada função horária da velocidade.</p>
+                <p>Nos movimentos variados, além de o espaço s variar no decurso do tempo, também a velocidade escalar é uma função do tempo. A velocidade escalar pode ser apresentada como função do tempo por meio de tabelas ou de funções matemáticas. A função que relaciona a velocidade escalar <strong>V</strong> em função do tempo <strong>T</strong> é chamada função horária da velocidade.</p>
             </li>
         </ol>
 
         <h2>Movimento acelerado e movimento retardado</h2>
-        <p>Em Cinemática, de acordo com a orientação da trajetória, a velocidade escalar pode ser positiva ou negativa. Assim, ao nos referirmos a acelerado ou retardado, devemos trabalhar com o módulo da velocidade escalar. Quando aceleramos ou retardamos um veículo, estamos aumentando ou diminuindo o módulo da velocidade escalar.</p>
-        <img src="MovAceleraeRetardado.png" alt="">
-        <p>O sinal da aceleração escalar depende do sinal da variação da velocidade (Sv) e, de acordo com a orientação da trajetória, o movimento acelerado pode ser progressivo (a favor da orientação da trajetória) ou retrógrado (contra a orientação da trajetória). O mesmo ocorre no movimento retardado</p>
-        <img src="MOvimentoAcelerado.png" alt="">
-        <img src="MovimentoRetardado.png" alt="">
+        <p>Em Cinemática, de acordo com a orientação da trajetória, a velocidade escalar pode ser positiva ou negativa. Assim, ao nos referirmos a acelerado ou retardado, devemos trabalhar com o módulo da velocidade escalar. Quando aceleramos ou retardamos um veículo, estamos aumentando ou diminuindo o módulo da velocidade escalar.</p> <br>
+        <p>O sinal da aceleração escalar depende do sinal da variação da velocidade (\( \Delta v \)) e, de acordo com a orientação da trajetória, o movimento acelerado pode ser progressivo (a favor da orientação da trajetória) ou retrógrado (contra a orientação da trajetória). O mesmo ocorre no movimento retardado</p>
+        <div style="display: flex;">
+            <img src="MOvimentoAcelerado.png" alt="">
+            <img src="MovimentoRetardado.png" alt="">
+        </div> <br>
        <p>
         Movimentos que possuem aceleração escalar instantânea constante (e não nula) são chamados movimentos uniformemente variados. Decorre imediatamente que, se a aceleração escalar é a mesma em todos os instantes.
        </p> 
