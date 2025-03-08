@@ -81,9 +81,21 @@ img{
     color: #000000; /* Altera a cor da fórmula (neste caso, um tom de laranja) */
     text-align: center;
 }
-#formulas{
-    font-size: 50px; /* Ajusta o tamanho da fórmula */
-    color: #000000; /* Altera a cor da fórmula (neste caso, um tom de laranja) */
+.Formulas{
+    font-size: 30px; 
+    text-align: center;
+}
+
+.DescricaoFormulas{
+    margin-top:50px;
+    margin-left: 50px;
+    background-color: rgb(27, 27, 114);
+    color: aliceblue;
+    border-radius: 10px;
+    width: 255px;
+    text-align: center;
+    margin-left: 313px;
+    margin: auto;
 }
 
 .content-wrapper {
