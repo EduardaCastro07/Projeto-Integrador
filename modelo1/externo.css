@@ -104,6 +104,10 @@ img{
     padding: 20px; /* Para adicionar um pouco de espaço ao redor do conteúdo */
 }
 
-.scene scene--card{
-    display: inline-block; width: 260px; height: 200px; margin: 40px 0; perspective: 600px;
+.scene {
+    display: block;  /* Faz cada flashcard ficar um abaixo do outro */
+    width: 260px;    /* Define a largura dos flashcards */
+    height: 200px;   /* Define a altura dos flashcards */
+    margin: 20px auto; /* Centraliza os flashcards */
+    perspective: 600px;
 }
