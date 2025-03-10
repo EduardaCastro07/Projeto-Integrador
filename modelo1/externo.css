@@ -8,8 +8,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 5px; /* Adiciona um espaço controlado entre a logo e o título */
-    padding: 5px; /* Ajusta o padding para que o header ocupe menos espaço vertical */
+}
+
+header .topico{
+    margin-left: 50px;
 }
 
 
@@ -42,6 +44,31 @@ header h2{
     background-color:rgb(217, 216, 213);
     border-radius: 5px;
     height:180px;
+    padding-bottom: 200px;
+}
+
+.temass {
+    display: none;
+    position: absolute;
+    background-color:rgb(217, 216, 213);
+    border-radius: 5px;
+    height:180px;
+    padding-bottom: 100px;
+}
+
+.temass a {
+    display: block;
+    color: rgb(0, 0, 107);
+    padding: 5px;
+    text-decoration:none;
+    margin-top: 10px;
+    width: 180px;
+}
+.temass a:hover {
+    color: rgb(104, 104, 104);
+}
+.topico:hover .temass {
+    display: block;
 }
 
 .temas a {
