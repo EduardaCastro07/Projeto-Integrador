@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css">
 </head>
 <body>
 <header>
@@ -43,9 +44,10 @@
         </div>
     </div>
 </header>
-<main style="width:75%;">
+<div class="content-wrapper">
+    <main style="width:75%;">
     <h1 >Cinemática: física - Principais conceitos</h1> <br>
-    <div style="width:70%; margin:auto">
+        <div style="width:70%; margin:auto">
         <p>Esse site é especialmente para aqueles estudantes que tem como foco estudar para o enem de uma forma simples e didática com os principais conceitos de Cinemática e muitos exercícios para praticar. </p>
         <p>A <strong>Cinemática</strong> é a parte da Física que descreve os movimentos,
         procurando determinar a <strong>posição, a velocidade e a aceleração</strong>  de um
@@ -53,7 +55,7 @@
         <h2>Posição</h2>
         <p>A primeira etapa em Cinemática é a determinação, em cada instante,da posição de um móvel. <br> Por exemplo, se o ônibus tiver partido de uma localidade no km 60 (fig. 2) e se
         deslocado até o km 90, terá andado nesse intervalo de tempo 30 km, diferente portanto de 90 km</p>
-        <img src="onibus.png" alt="">
+        <div style="text-align: center;"><img src="onibus.png" alt=""></div> <br>
         <h2>Referencial</h2>
         <p>Um corpo está em movimento quando sua posição muda no decurso do tempo. O corpo em relação ao qual identificamos se um móvel está em movimento ou em repouso é chamado referencial ou sistema de referência
         </p>
@@ -69,19 +71,44 @@
             </div>
         </div>
         <h2>Velocidade escalar média e velocidade escalar instantânea</h2>
-        <p>Considere um ônibus em movimento em relação ao solo, percorrendo 180 km em 3 h. A distância percorrida (180 km) dividida pelo intervalo de tempo (3 h) caracteriza a velocidade escalar média vm do ônibus: <br>
+        <p>Considere um ônibus em movimento em relação ao solo, percorrendo 180 km em 3 h. A distância percorrida (180 km) dividida pelo intervalo de tempo (3 h) caracteriza a velocidade escalar média Vm do ônibus: <br>
 
-        <p>vm = 180 km/3 h = 60 km/h <br></p> 
+        <p>Vm = 180 km/3 h = 60 km/h <br></p> 
             
         <p> A qualquer movimento associamos a grandeza chamada velocidade escalar para medir a variação do espaço do móvel no decorrer do tempo. Iniciaremos, portanto, nosso estudo analisando a <strong>velocidade escalar média.</strong></p>
 
-       <p>Fórmula:</p> 
-        <img src="formula-velocidade-media.webp" alt="">
+            <div id="formula"></div>
+            <script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+            
+            <script>
+            const formula = "v_{\\text{média}} = \\frac{\\Delta s}{\\Delta t}" ;
+            const element = document.getElementById('formula');
+            katex.render(formula, element);
+            </script> <br>
 
         <h2>Unidade de medida</h2>
         <p>A unidade de velocidade escalar (média ou instantânea) é expressa em unidade de comprimento por unidade de tempo: km/h (quilômetros por hora), m/s (metros por segundo), são os mais comuns e mais pedidos em provas. Veja abaixo como fazer a transformação:
         </p>
-        <img src="Udemedida.png" alt="">
+
+        <div id="Unidadedemedida" style="font-size: 30px; text-align: center;"></div> <br> <br>
+
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+
+        <script>
+            const formula1 =  `
+        \\frac{_{km}}{h} 
+        \\overset{\\div 3.6}{\\longrightarrow} 
+        \\frac{_{m}}{s}
+        \\quad 
+        \\frac{_{m}}{s} 
+        \\overset{\\times 3.6}{\\longrightarrow} 
+        \\frac{_{km}}{h}
+    `;
+            const element1 = document.getElementById('Unidadedemedida');
+            katex.render(formula1, element1);
+        </script>
+
+       
 
         <h2>Movimento progressivo e retrógrado</h2>
         <p> O movimento é chamado progressivo quando o móvel caminha a favor da orientação positiva da trajetória. Seus espaços crescem no decurso do tempo e sua velocidade escalar é positiva. O movimento é chamado retrógrado quando o móvel caminha contra a orientação positiva da trajetória. Seus espaços decrescem no decurso do tempo e sua velocidade escalar é negativa.
@@ -89,7 +116,7 @@
         <div style="display: flex;">
             <img src="imagemRetrogadro.png" alt="" style="margin-right: 6px;">
             <img src="movimentoretrogrado.png" alt="">
-        </div>
+        </div> <br>
 
         <div class="Exercicios">
             <h2>Exercícios</h2>
@@ -214,11 +241,14 @@
                 </div>
             </div>
 
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+                <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+                    onload="renderMathInElement(document.body);"></script>
+
             <div class="exercicio 5">
                 <p>
                     <strong>5.(Fuvest-SP)</strong> Um automóvel e um ônibus trafegam
-                    em uma estrada plana, mantendo velocidades constantes em torno de 100 km/h e 75 km/h,respectivamente. Os dois veículos passam lado a lado em um posto de pedágio. Quarenta minutos(@ __ 23
-                    de hora #) depois, nessa mesma estrada, o motorista do ônibus vê o automóvel ultrapassá-lo. Ele supõe, então, que o automóvel deve ter realizado,nesse período,<br>
+                    em uma estrada plana, mantendo velocidades constantes em torno de 100 km/h e 75 km/h,respectivamente. Os dois veículos passam lado a lado em um posto de pedágio. Quarenta minutos(\( \frac{2}{3} \text{ da hora} \)) depois, nessa mesma estrada, o motorista do ônibus vê o automóvel ultrapassá-lo. Ele supõe, então, que o automóvel deve ter realizado,nesse período,<br>
                     A) 4 minutos<br>
                     B) 7 minutos <br>
                     C) 10 minutos <br>
@@ -275,17 +305,50 @@
                     </div>
                 </div>
             </div>
-
-        </div>
         </div>
     </div> 
 </main>
+    <aside>
+        <p><a href="">Flash-cards</a> para memorização de fórmulas para os exercícios.</p>
+        <div class="scene scene--card" style=" width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+            <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+                <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 30px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                    <p style="margin-top: -30px;">Velocidade  Média</p>
+                </div>
+                <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 30px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+                    <p style="margin-top: -30px;">\( v_m = \frac{\Delta s}{\Delta t} \)
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scene scene--card" style="display: inline-block; width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+            <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+                <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 29px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                    <p style="margin-top: -30px;">Unidade de medida </p>
+                </div>
+                <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 20px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+                <p style="margin-top: -30px;">\( \frac{\text{km}}{\text{h}} \overset{\div 3.6}{\longrightarrow} \frac{\text{m}}{\text{s}} \quad \frac{\text{m}}{\text{s}} \overset{\times 3.6}{\longrightarrow} \frac{\text{km}}{\text{h}} \)
+                </p>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<script>
+    // Script para alternar a classe 'is-flipped' nos cartões
+    var cards = document.querySelectorAll('.card');
+
+    [...cards].forEach((card) => {
+        card.addEventListener('click', function() {
+            // Adiciona e remove a rotação do cartão
+            card.style.transform = card.style.transform === 'rotateY(180deg)' ? '' : 'rotateY(180deg)';
+        });
+    });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    const collapseElementList = document.querySelectorAll('.collapse')
-    const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-</script>
 
 </body>
 </html>

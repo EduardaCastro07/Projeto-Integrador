@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css">
 </head>
 <body>
 <header>
@@ -49,65 +50,231 @@
         <p>
             Movimentos uniformes são aqueles que possuem velocidade escalar instantânea constante. Portanto, se a velocidade escalar é a mesma em todos os instantes, ela coincide com a velocidade escalar média, qualquer que seja o intervalo de tempo considerado,no movimento.
         </p>
-        <img src="eq1.png" alt="imagem">
+        <div id="formula"></div>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+        
+        <script>
+        const formula = "v_{\\text{média}} = \\frac{\\Delta s}{\\Delta t}";
+        const element = document.getElementById('formula');
+        katex.render(formula, element);
+        </script> <br>
+
         <p>No movimento uniforme, a velocidade escalar instantânea é constante e coincide com a velocidade escalar média, independentemente do intervalo de tempo. 
         </p>
-        <img src="eq2.png" alt="imagem">
+
+        <div id="formulas"></div>
+        <script>
+        const formulas = "s = s_0 + v \\cdot t";
+        const elements = document.getElementById('formulas');
+        katex.render(formulas, elements);
+        </script><br>
+        
+
         <p>A função horária do movimento uniforme é do primeiro grau em t. Nessa função, s0 e v são constantes com o tempo. V é a velocidade escalar do movimento; V > 0 quando o movimento é progressivo; V < 0 quando o movimento é retrógrado.
         </p>
-        <h1>Movimento com Velocidade Escalar Variável / Movimento Uniformemente Variado</h1><br>
-        <p>Os movimentos são classificados de duas formas: os movimentos uniformes que possuem uma velocidade escalar constante,ou seja, nunca varia, e os movimentos variados que a velocidade varia de acordo com o tempo, como por exemplo:um carro se deslocando ou uma pessoa caminhando.
-            No movimento uniforme, a velocidade escalar média calculada em qualquer intervalo de tempo é sempre a mesma, e igual à velocidade escalar em qualquer instante. Esse fato não ocorre no movimento variado.
-            s, devemos distinguir duas velocidades: a velocidade escalar média, definida em um determinado intervalo de tempo, e a velocidade escalar instantânea.
-        </p>
-        <img src="eq3.png" alt="">
-        <h1>Aceleração Escalar e Aceleração Escalar Instantânea.</h1>
-        <p>Num movimento variado, seja v1 a velocidade escalar do móvel no instante t1 e v2 a velocidade escalar no instante posterior t2. Seja V = v2 -v1 a variação da velocidade no intervalo de tempo T. A aceleração escalar média am no intervalo de tempo T é, por definição:</p>
-        <img src="eq4.png" alt="">
-        <p>A aceleração escalar instantânea a pode ser entendida como uma aceleração escalar média Am= V/T , considerando-se o intervalo de tempo T extremamente pequeno, isto é, T  tendendo a zero (T = 0 ou T2 = T1 ) Nesse caso, o quociente V/T assume um determinado valor limite. Daí a definição:
-        </p>
-        <img src="eq5.png" alt="">
-        <p>se a variação da velocidade estiver em m/s e o intervalo de tempo em s, a aceleração será medida em m/s/s.
-            A aceleração escalar pode ser positiva ou negativa, conforme V seja positivo ou negativo, já que T é positivo. No movimento uniforme a velocidade escalar é constante e a aceleração escalar é nula.
-        </p>
-        <h1>Movimento Acelerado  Movimento Retardado</h1>
-        <p>Movimento Acelerado: o módulo da velocidade escalar aumenta no decurso do tempo.
-            Movimento Retardado: o módulo da velocidade escalar diminui no decurso do tempo.
-        </p>
-        <p>Em Cinemática, de acordo com a orientação da trajetória, a velocidade escalar pode ser positiva ou negativa. Assim, ao nos referirmos a acelerado ou retardado, devemos trabalhar com o módulo da velocidade escalar. Quando aceleramos ou retardamos um veículo, estamos aumentando ou diminuindo o módulo da velocidade escalar.
 
-            O sinal da aceleração escalar depende do sinal da variação da velocidade e de acordo com a orientação da trajetória, o movimento acelerado pode ser progressivo ou retrógrado. O mesmo ocorre no movimento retardado.
-            
-                              Num movimento acelerado, a velocidade escalar e a aceleração escalar tem o mesmo          sinal: ou ambas são positivas ou ambas são negativas.
-                             Num movimento retardado, a velocidade escalar e aceleração tem sinais contrarios: qunado uma é positiva, a outra é negativa, e vice-versa.
-        </p>
-        <h1>Função horária da velocidade</h1>
-        <p>Nos movimentos variados, além de o espaço S variar no decurso do tempo, também a velocidade escalar é uma função do tempo. A velocidade escalar pode ser apresentada como função do tempo por meio de tabelas ou de funções matemáticas. A função que relaciona a velocidade escalar v em função do tempo t é chamada função horária da velocidade.
-        </p>
-        <h1>Movimento uniformemente variado (MUV)</h1>
-        <p>Movimentos que possuem aceleração escalar instantânea constante (e não nula) são chamados movimentos uniformemente variados. Decorre imediatamente que, se a aceleração escalar é a mesma em todos os instantes, ela coincide com a aceleração escalar média, qualquer que seja o intervalo de tempo considerado. </p>
-        <img src="eq6.png" alt="">
-        <h1>Função horária da velocidade do MUV.</h1>
-        <p>Sendo v0 a velocidade escalar no instante t = 0, denominada velocidade inicial, e v a velocidade escalar num instante t, vem:</p>
-        <img src="eq7.png" alt="">
-        <p>Essa função estabelece como varia a velocidade escalar no decurso do tempo no movimento uniformemente variado: v0 e a são constantes, e a cada valor de t corresponde um único valor de v.
-        </p>
-        <h1>Função horária do espaço no MUV.</h1>
-        <p>Todo MUV possui aceleração escalar constante com o tempo e velocidade escalar variável de acordo com a função v = v0 + at. Para que sua descrição seja completa, devemos também conhecer sua função horária dos espaços, isto é, como os espaços S variam no decurso do tempo. É possível demonstrar que a função horária do MUV é uma função do segundo grau em t do tipo:
-        </p>
-        <img src="eq8.png" alt="">
-        <img src="eq9.png" alt="">
-        <h1>Velocidade Escalar Média no MUV</h1>
-        <img src="eq10.png" alt="">
-        <h1>Equação de Torricelli para MUV</h1>
-        <img src="eq11.png" alt="">
-        <p>No MUV há muitos casos nos quais interessa relacionar a velocidade escalar v em função do espaço S, o que é feito com o emprego da chamada equação de Torricelli, que deduzimos a seguir.
-            elevando ao quadrado ambos os membros de v = aT,se resulta:</p>
-    </div>
-
+            <div class="Exercicios">
+                <h2>Exercícios</h2>
+                <div class="exercicio 1">
+                    <p>
+                        <strong>1.(Mackenzie-SP)</strong>) A distância média da Terra à Lua
+                        é 3,9 3 108
+                         m. Sendo a velocidade da luz no vácuo
+                        igual a 3,0 3 105
+                         km/s, o tempo médio gasto por ela
+                        para percorrer essa distância é de: <br>
+                            a)0,77 s <br>
+                            b)1,3 s<br>
+                            c)13 s <br>
+                            d)77 s<br>
+                            e)1.300 s
+                    </p>
+                    <div>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                            Ver resposta
+                            </a>
+                        </p>
+                        
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                <strong>LETRA B</strong> <br> Alternativa (A) ERRADA: 0,77 s, Esse valor seria obtido se a distância fosse menor ou a velocidade maior. Como os valores dados são 3,9 × 10^8 m e 3,0 × 10^8 m/s, esse valor de tempo está incorreto. <br>
+                                Alternativa (C) ERRADA:  13 s, Esse valor seria obtido com uma distância maior ou uma velocidade menor. Como a distância e a velocidade estão bem definidas, esse valor também está errado.. <br>
+                                Alternativa (D) ERRADA: 77 s, Esse valor também está muito distante do tempo correto, devido à mesma razão das alternativas anteriores. <br>
+                                Alternativa (E) ERRADA: 1.300 s, Esse valor também não é coerente com a distância e a velocidade dadas. <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="exercicio 2">
+                    <p>
+                        <strong>2.(UFPE)</strong>) Um projetor de filmes gira com uma velocidade de 20 quadros por segundo. Cada quadro
+                        mede 1,0 cm de comprimento. Despreze a separação entre os quadros. Qual é o tempo de projeção,
+                        em minutos, de um filme cuja fita tem um comprimento total de 18 m? <br>
+                        a)1,5 <br>
+                        b)3,0 <br>
+                        c)4,5 <br>
+                        d)6,0 <br>
+                        e)7,5 <br>
+                    </p>
+                    <div>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                            Ver resposta
+                            </a>
+                        </p>
+                        
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                <strong>LETRA A</strong> <br>
+                                B) <strong> Errado!</strong>3,0 minutos: Esse valor seria obtido se o filme fosse mais rápido ou mais curto. O cálculo correto leva a 1,5 minutos. <br>
+                                C) <strong>Errado!</strong>4,5 minutos: Esse valor está muito alto para a quantidade de quadros e o tempo de projeção calculado. <br>
+                                D) <strong>Errado!</strong>6,0 minutos: Também está incorreto, pois é muito maior que o tempo correto de 1,5 minutos. <br>
+                                E) <strong>Errado!</strong>7,5 minutos: Este valor é ainda mais alto do que o valor correto de 1,5 minutos. <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="exercicio 3">
+                    <p>
+                        <strong>3.(Olimpíada Brasileira de Física)</strong>) Uma máquina fotográfica é ajustada para executar uma sequência
+                        de fotografias de duas partículas movendo-se ao
+                        longo de trilhos paralelos em movimento retilíneo
+                        uniforme. Os intervalos de tempo entre duas fotos
+                        consecutivas são constantes e iguais a 0,25 segundo.
+                        Na primeira fotografia, a distância entre as partículas é de 24 cm. A comparação entre a primeira e a
+                        segunda foto mostra que as partículas se movem
+                        em sentidos opostos, tendo então se deslocado
+                        distâncias respectivamente iguais a 5 cm e 2,5 cm.
+                        Pode-se afirmar que:
+                        I. a partícula mais veloz vê a mais lenta se aproximar com uma velocidade 1,5 vez maior que
+                        a sua;
+                        II. o instante em que uma partícula passa pela
+                        outra é registrado em fotografia;
+                        III. 5 fotografias são tiradas desde o instante inicial
+                        até o momento em que a partícula mais veloz passa pela posição inicial da partícula mais lenta.
+                        Assinale a opção correta.<br>
+                        a) Apenas a afirmativa I é verdadeira. <br>
+                        b) Apenas a afirmativa II é verdadeira. <br>
+                        c) Apenas a afirmativa III é verdadeira. <br>
+                        d) Apenas as afirmativas I e II são verdadeiras. <br>
+                        e) Apenas as afirmativas I e III são verdadeiras. <br>
+                    </p>
+                    <div>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                            Ver resposta
+                            </a>
+                        </p>
+                        
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                <strong>LETRA A</strong> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="exercicio 4">
+                    <p>
+                        <strong>4.(Cesgranrio-RJ)</strong> Uma cena, filmada originalmente
+                        a uma velocidade de 40 quadros por segundo, é
+                        projetada em câmera lenta a uma velocidade reduzida de 24 quadros por segundo. A projeção dura
+                        1,0 min. A duração real da cena filmada é de: <br>
+                        a) 16 s <br>
+                        b) 36 s <br>
+                        c) 100 s <br>
+                        d) 24 s <br>
+                        e) 40 s <br>
+                    </p>
+                    <div>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                            Ver resposta
+                            </a>
+                        </p>
+                        
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body">
+                                <strong> LETRA C)100 S </strong>a) 16 s: Esse valor seria obtido se a cena fosse projetada a uma velocidade muito mais lenta do que a real, o que não é o caso. A relação entre as taxas de quadros é 5/3, não gerando esse valor. <br>
+                                b) 36 s: Esse valor está abaixo do tempo real, sugerindo uma compressão ainda maior que a que realmente ocorreu (de 40 quadros para 24 quadros por segundo), o que não é correto. <br>
+                                d) 24 s: Esse valor também não é possível, pois, com a relação de velocidades de 40 para 24 quadros por segundo, o tempo real da cena não seria tão curto. <br> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="exercicio 5">
+                    <p>
+                        <strong>5.(Uespi)</strong>Um passageiro perdeu um ônibus que saiu
+                        da rodoviária há 5 minutos e pega um táxi para
+                        alcançá-lo. O ônibus desenvolve uma velocidade
+                        de 60 km/h, e o táxi, de 90 km/h. O intervalo de
+                        tempo necessário ao táxi para alcançar o ônibus
+                        é, em minutos:
+                        a) 25 <br>
+                        b) 20 <br>
+                        c) 15 <br>
+                        d) 10 <br>
+                        e) 5 <br>
+                    </p>
+                    <div>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                            Ver resposta
+                            </a>
+                        </p>
+                        
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body">
+                                <strong>D)10 min</strong> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="exercicio 6">
+                    <p>
+                        <strong>6.(Furg-RS)</strong> Um comboio de vagões é puxado por
+                        uma locomotiva com velocidade de 36 km/h. Essa
+                        composição ferroviária tem um comprimento total
+                        de 210 m e é ultrapassada por um automóvel que se
+                        desloca com velocidade de 15 m/s. Quanto tempo
+                        decorre desde o instante em que o automóvel alcança o último vagão da composição até o instante
+                        em que ultrapassa a locomotiva? Considere as
+                        dimensões do automóvel desprezíveis comparativamente com as dimensões do comboio.<br>
+                        A) 4,2 s<br>
+                        B) 8,4 s <br>
+                        C) 14 s <br>
+                        D) 21 s <br>
+                        E) 42 s <br>
+                    </p>
+                    <div>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                            Ver resposta
+                            </a>
+                        </p>
+                        
+                        <div class="collapse" id="collapseExample6">
+                            <div class="card card-body">
+                                <strong>LETRA E) 42 s</strong>
+                                a) 4,2 s: Esse valor seria o tempo necessário para o automóvel percorrer uma distância muito menor que a do comboio (210 m), o que não é o caso. A distância que o automóvel precisa percorrer é toda a extensão do comboio, ou seja, 210 m, e o tempo correto é 42 s, não 4,2 s. <br>
+                                b) 8,4 s: Esse valor também é muito baixo, considerando que a distância a ser percorrida é 210 m. Para um automóvel se deslocando a 5 m/s (velocidade relativa), o tempo correto seria de 42 s, e 8,4 s não representa essa distância. <br>
+                                c) 14 s: Assim como as anteriores, esse tempo é muito curto para percorrer os 210 m necessários para ultrapassar a locomotiva. Para isso, o automóvel levaria 42 s, e não 14 s. <br>
+                                d) 21 s: Esse valor ainda está abaixo do tempo correto, que é 42 s, considerando a velocidade relativa de 5 m/s e a distância total de 210 m. <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+</div>                            
 </main>
-<aside>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </aside>
 </body>
 </html>
