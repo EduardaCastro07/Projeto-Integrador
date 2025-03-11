@@ -53,7 +53,7 @@ header h2{
     background-color:rgb(217, 216, 213);
     border-radius: 5px;
     height:180px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .temass a {
@@ -86,7 +86,7 @@ header h2{
     display: block;
 }
 
-h1, h2{
+h1{
     text-align: center;
     font-family: "Russo One", serif;
     font-weight: 100;
@@ -103,6 +103,7 @@ img{
 .imagem{
     text-align: center;
 }
+
 #formula{
     font-size: 30px; /* Ajusta o tamanho da fórmula */
     color: #000000; /* Altera a cor da fórmula (neste caso, um tom de laranja) */
