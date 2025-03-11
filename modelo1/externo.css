@@ -139,3 +139,15 @@ img{
     margin: 20px auto; /* Centraliza os flashcards */
     perspective: 600px;
 }
+
+.paginauni {
+    text-align: center; /* Centraliza o texto */
+    background-color: #c9d9ee; /* Cor de fundo */
+    border-radius: 50px; 
+    height: 50%;
+    width: 50%;
+    margin-left: 400px;
+    margin-top: 200px;
+    padding-bottom: 90px;
+    
+}
