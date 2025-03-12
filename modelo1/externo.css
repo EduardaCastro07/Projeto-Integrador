@@ -105,8 +105,14 @@ img{
 }
 
 #formula{
-    font-size: 30px; /* Ajusta o tamanho da fórmula */
-    color: #000000; /* Altera a cor da fórmula (neste caso, um tom de laranja) */
+    font-size: 30px; 
+    color: #000000; 
+    text-align: center;
+}
+
+#formulas{
+    font-size: 30px; 
+    color: #000000; 
     text-align: center;
 }
 .Formulas{
@@ -127,22 +133,22 @@ img{
 }
 
 .content-wrapper {
-    display: flex; /* Usamos flexbox para organizar os elementos lado a lado */
-    justify-content: space-between; /* Adiciona espaço entre o main e o aside */
-    padding: 20px; /* Para adicionar um pouco de espaço ao redor do conteúdo */
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
 }
 
 .scene {
-    display: block;  /* Faz cada flashcard ficar um abaixo do outro */
-    width: 260px;    /* Define a largura dos flashcards */
-    height: 200px;   /* Define a altura dos flashcards */
-    margin: 20px auto; /* Centraliza os flashcards */
+    display: block;  
+    width: 260px;    
+    height: 200px;  
+    margin: 20px auto; 
     perspective: 600px;
 }
 
 .paginauni {
-    text-align: center; /* Centraliza o texto */
-    background-color: #c9d9ee; /* Cor de fundo */
+    text-align: center; 
+    background-color: #c9d9ee; 
     border-radius: 50px; 
     height: 50%;
     width: 50%;
@@ -155,4 +161,13 @@ img{
 .paginauni a{
     text-decoration: none;
     font-size: 25px;
+}
+
+#destino {
+    transition: background-color 1.5s ease;
+}
+
+#destino:target {
+    background-color: #c9d9ee;
+    padding: 5px;
 }
